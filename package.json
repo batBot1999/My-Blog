@@ -1,0 +1,22 @@
+{
+	"name": "foreverliu-blog",
+	"version": "3.0.0",
+	"description": "记录自己学习成长,愿我们的付出终将有所收获",
+	"main": "index.js",
+	"scripts": {
+		"dev": "vitepress dev docs",
+		"build": "vitepress build docs",
+		"serve": "vitepress serve docs"
+	},
+	"author": "foreverliu",
+	"license": "ISC",
+	"dependencies": {
+		"@algolia/client-search": "^4.9.1",
+		"@docsearch/js": "^3.1.0",
+		"@docsearch/react": "^3.1.0",
+		"@types/react": ">= 16.8.0 < 19.0.0",
+		"react": ">= 16.8.0 < 19.0.0",
+		"react-dom": ">= 16.8.0 < 19.0.0",
+		"vitepress": "1.0.0-alpha.1"
+	}
+}

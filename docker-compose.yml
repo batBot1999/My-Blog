@@ -1,0 +1,16 @@
+version: "3" # 表示使用第三代语法来构建
+
+services: # 需要用 compose 启动的服务
+  node: # 负责打包出html静态文件
+    build: .
+    volumes:
+      - site:/app/docs/.vitepress/dist
+
+  web-server:
+    image: caddy
+    ports:
+      - "80:80" # 端口映射
+    volumes:
+      - site:/usr/share/caddy/
+volumes:
+  site:
